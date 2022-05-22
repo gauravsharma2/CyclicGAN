@@ -1,14 +1,17 @@
 # CyclicGAN
-# Simple, straight-forward implementation of CycleGAN in PyTorch
+Face Aging using CycleGANs
 
-I have implemented this jupyter notebook while directly referring to some OLD papers.
+An attempt to map age progression in faces in images from the UTKFace dataset using CycleGANs. CycleGANs were introduced in this paper titled Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks (https://arxiv.org/abs/1703.10593) where the authors presented an approach for learning to translate an image from a source domain X to a target domain Y in the absence of paired examples.
 
-The notebook, however, was not run for more than 10 epochs because I currently do not have access to a good GPU (still saving up for that!). Hope you have a better experience than me and I'm excited to see your results!
+For the images of faces with various ages we will be using the UTKFace dataset wich has a cropped image set of only faces marked with age , gender , race , etc.
 
-## Some changes to the paper:
+We will be using following two good references that use CycleGAN in order to build and train our models
 
-I added 2 discriminators for every generator. One of the discriminators works on 70x70 patches (as mentioned in the paper) and the other looks at the whole image. Later I aggregate the scores of both these discriminators for a better result. 
+https://github.com/sungnam0/Face-Aging-with-CycleGAN
 
-## TODO
+https://machinelearningmastery.com/cyclegan-tutorial-with-keras/
 
-Adding linear learning-rate decay if it is trained for more than 100 epochs.
+
+Face Aging GAN with complete training output 
+
+
